@@ -16,7 +16,7 @@ services:
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
     labels:
       - traefik.enable=true
-      - traefik.tcp.routers.redis.rule=HostSNI(`redis.kleytons.dev`)
+      - traefik.tcp.routers.redis.rule=HostSNI(`redis.kleytons.com`)
       - traefik.tcp.routers.redis.entrypoints=websecure
       - traefik.tcp.routers.redis.tls=true
       - traefik.tcp.routers.redis.tls.certresolver=staging
